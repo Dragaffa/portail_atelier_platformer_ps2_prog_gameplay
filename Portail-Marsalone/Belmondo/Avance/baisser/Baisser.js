@@ -37,7 +37,7 @@ class Baisser extends Phaser.Scene {
 
         this.anims.create({
             key: 'turn',
-            frames: ( { key: 'accfull', start: 0, end:4 } ),//C'EST L'IMAGE 4 QUI EST JOUEE
+            frames: ( { key: 'accroupi', start: 0, end:4 } ),//C'EST L'IMAGE 4 QUI EST JOUEE
             frameRate: 10,//NOMBRE D'IMAGES JOUEES
             repeat:-1
         });
@@ -49,12 +49,6 @@ class Baisser extends Phaser.Scene {
             repeat: -1//REPETITION INFINIE
         });
 
-        this.anims.create({
-            key: 'tombe',
-            frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),//CE SONT LES IMAGES 5/6/7/8 QUI SONT JOUEES
-            frameRate: 10,//NOMBRE D'IMAGES JOUEES
-            repeat: 1//REPETITION INFINIE
-        });
 
 
 
